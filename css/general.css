@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #e67e22;
+  --primary-color-dark: #cf711f;
+  --primary-color-darker: #b8651b;
+
+  --accent-color: #fdf2e9;
+  --gray-color: #333;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: #555;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+/*==============================*/
+/*====== General Rules ====== */
+/*==============================*/
+.container,
+.container__fluid {
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.container {
+  max-width: 120rem;
+}
+.container__fluid {
+  max-width: 140rem;
+}
+.secondary__heading {
+  color: var(--gray-color);
+  font-weight: 700;
+  font-size: 4.4rem;
+  margin-bottom: 9.6rem;
+}
+.sub__heading {
+  color: var(--primary-color-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  display: block;
+}
+.tertiary__heading {
+  color: var(--gray-color);
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 3.2rem;
+}
+.btn {
+  padding: 1.6rem 3.2rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1.8rem;
+  display: inline-block;
+  font-weight: 500;
+  transition: 0.3s;
+}
+ul {
+  list-style: none;
+}
+.list,
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.list li,
+.list li {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.list li span {
+  font-weight: 500;
+}
+.list .list__icon {
+  height: 2.6rem;
+  width: 2.6rem;
+  color: #e67e22;
+}
+
+/*=============================*/
+/*====== Grid System ====== */
+/*=============================*/
+.grid {
+  display: grid;
+}
+.grid--2--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4--cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--5--cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid--centered-v {
+  align-items: center;
+}
+
+/*==============================*/
+/*====== Helper Classes ====== */
+/*==============================*/
+.mr-sm {
+  margin-right: 0.8rem;
+}
+.text-center {
+  text-align: center;
+}
+
+/*==============================*/
+/*====== Spacing System ====== */
+/*==============================*/
+
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
