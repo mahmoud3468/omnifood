@@ -1,4 +1,4 @@
-/* ====== Nav Start ====== */
+/* ====== NAVBAR START ====== */
 nav {
   height: 9.6rem;
   background-color: var(--accent-color);
@@ -11,14 +11,13 @@ nav {
   height: 2.2rem;
 }
 .nav__links {
-  list-style: none;
   display: flex;
   align-items: center;
   gap: 3.2rem;
 }
 .nav__links a {
   text-decoration: none;
-  color: #000;
+  color: var(--gray-color);
   font-size: 1.8rem;
   font-weight: 600;
   transition: 0.3s;
@@ -35,9 +34,9 @@ nav {
 .nav__cta:hover {
   background-color: var(--primary-color-dark);
 }
-/* ====== Nav End ====== */
+/* ====== NAVBAR END ====== */
 
-/*====== Hero Start ======*/
+/*====== HERO START ======*/
 .hero__section {
   background-color: var(--accent-color);
   padding: 4.8rem 0 9.6rem 0;
@@ -110,9 +109,9 @@ nav {
   color: var(--primary-color-dark);
   font-weight: 700;
 }
-/*====== Hero End ======*/
+/*====== HERO END ======*/
 
-/*====== Featured Start ======*/
+/*====== FEATURED START ======*/
 .featured__section {
   padding: 4.8rem 0 3.2rem;
 }
@@ -134,9 +133,9 @@ nav {
   height: 3.2rem;
   opacity: 0.5;
 }
-/*====== Featured End ======*/
+/*====== FEATURED END ======*/
 
-/*====== How It Works Start ======*/
+/*====== HOW IT WORKS START ======*/
 .how__section {
   padding: 9.6rem 0 4.8rem 0;
 }
@@ -184,9 +183,9 @@ nav {
   width: 50%;
   padding-bottom: 50%;
 }
-/*====== How It Works End ======*/
+/*====== HOW IT WORKS END ======*/
 
-/*====== Meals Start ======*/
+/*====== MEALS START ======*/
 .meals__section {
   padding: 9.6rem 0;
 }
@@ -250,9 +249,9 @@ nav {
   display: inline-block;
   text-decoration: none;
 }
-/*====== Meals End ======*/
+/*====== MEALS END ======*/
 
-/*====== Testimonials Start ======*/
+/*====== TESTIMONIALS START ======*/
 .testimonials__section {
   background-color: var(--accent-color);
   padding: 8.6rem 0;
@@ -291,9 +290,9 @@ nav {
 .gallery__item img:hover {
   transform: scale(1.1);
 }
-/*====== Testimonials End ======*/
+/*====== TESTIMONIALS END ======*/
 
-/*====== Pricing Start ======*/
+/*====== PRICING START ======*/
 .pricing {
   padding: 9.6rem 0;
 }
@@ -373,7 +372,182 @@ nav {
   text-align: center;
   margin-top: 3.2rem;
 }
-/*====== Pricing End ======*/
+/*====== PRICING END ======*/
+
+/*====== FEATURES START ======*/
+.features {
+  padding-bottom: 9.6rem;
+}
+.features .grid {
+  gap: 3rem;
+}
+.feature__head {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+.feature__icon {
+  color: #e67e22;
+  height: 2.6rem;
+  width: 2.6rem;
+  background-color: #fdf2e9;
+  padding: 1.2rem;
+  border-radius: 50%;
+}
+.feature__title {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 700;
+}
+.feature__body {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+/*====== FEATURES END ======*/
+
+/*====== CALL TO ACTION START ======*/
+.cta__section {
+  padding: 4.8rem 0 12.8rem;
+}
+.cta__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.cta__content {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a !important;
+}
+.cta__content .secondary__heading {
+  margin-bottom: 3.2rem;
+  color: inherit;
+}
+.cta__text {
+  color: inherit;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+.cta__form {
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+.form__group {
+  display: flex;
+  flex-direction: column;
+}
+.cta__form label {
+  color: inherit;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta__form input,
+.cta__form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+  outline: none;
+}
+.cta__btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+.cta__btn:hover {
+  color: #45260a;
+  background-color: #fdf2e9;
+}
+.cta__img img {
+  width: 100%;
+}
+/*====== CALL TO ACTION END ======*/
+
+/*====== FOOTER START======*/
+.footer__section {
+  padding: 9.6rem 0 !important;
+  border-top: 1px solid #eee;
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  column-gap: 1.8rem;
+}
+.footer__logo {
+  height: 2.2rem;
+}
+.social__links {
+  display: flex;
+  gap: 1.2rem;
+  margin: 2.4rem 0 3.2rem;
+}
+.footer__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.copy__rights {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-bottom: 1.2rem;
+}
+.designer {
+  font-size: 1.4rem;
+  color: #555;
+}
+.designer small {
+  font-size: 1.2rem;
+  display: block;
+  margin-top: 0.4rem;
+}
+.footer__header {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+.footer__contact {
+  font-style: normal;
+}
+.address {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+}
+.footer__nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.footer__link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+.footer__link:hover {
+  color: #555;
+}
+/*====== FOOTER END ======*/
 
 /*
 - Font sizes (px)
