@@ -6,6 +6,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0 4.8rem;
+  gap: 1.6rem;
 }
 .nav__logo img {
   height: 2.2rem;
@@ -34,6 +35,21 @@ nav {
 .nav__cta:hover {
   background-color: var(--primary-color-dark);
 }
+.nav__burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 40px;
+  height: 25px;
+}
+.nav__burger span {
+  height: 3px;
+  width: 100%;
+  border-radius: 50px;
+  background-color: rgb(14, 14, 14);
+  display: inline-block;
+}
 /* ====== NAVBAR END ====== */
 
 /*====== HERO START ======*/
@@ -50,15 +66,7 @@ nav {
   gap: 9.6rem;
 }
 .hero__text {
-  padding-top: 1.8rem;
-}
-.hero__header {
-  font-size: 5.2rem;
-  font-weight: 700;
-  color: #333;
-  letter-spacing: -1px;
-  line-height: 1;
-  margin-bottom: 3.2rem;
+  padding-top: 1.6rem;
 }
 .hero__description {
   font-size: 2rem;
@@ -79,8 +87,17 @@ nav {
   background-color: var(--accent-color);
   box-shadow: 0 0 0 3px #fff;
 }
+.hero-sm {
+  display: none;
+}
+.hero__image {
+  width: 100%;
+  height: 100%;
+}
 .hero__image img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .hero__customers {
   margin-top: 8rem;
@@ -115,6 +132,7 @@ nav {
 .featured__section {
   padding: 4.8rem 0 3.2rem;
 }
+
 .featured__heading {
   text-transform: uppercase;
   text-align: center;
@@ -127,10 +145,10 @@ nav {
   display: flex;
   justify-content: space-around;
 }
+
 .featured__logos img {
-  height: 3.2rem;
   filter: brightness(0);
-  height: 3.2rem;
+  height: 3rem;
   opacity: 0.5;
 }
 /*====== FEATURED END ======*/
@@ -191,7 +209,6 @@ nav {
 }
 .meals__section .grid {
   column-gap: 6.4rem;
-  row-gap: 9.6rem;
 }
 .meal__card {
   overflow: hidden;
@@ -218,6 +235,7 @@ nav {
   color: var(--gray-color);
   border-radius: 100px;
   margin-bottom: 1.4rem;
+  margin-right: 0.4rem;
 }
 .tag__vegetarian {
   background-color: #51cf66;
@@ -254,28 +272,51 @@ nav {
 /*====== TESTIMONIALS START ======*/
 .testimonials__section {
   background-color: var(--accent-color);
-  padding: 8.6rem 0;
+  padding: 8.6rem 4.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   row-gap: 4.8rem;
-  column-gap: 8rem;
+  column-gap: 6.4rem;
   padding-right: 8rem;
+  text-align: left;
+}
+.testimonial__header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.6rem;
+}
+.testimonial__header div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
 }
 .testimonial img {
-  width: 6.4rem;
+  width: 6.2rem;
   border-radius: 50%;
-  margin-bottom: 1.2rem;
+}
+.testimonial p {
+  font-size: 2rem;
+  /* font-weight: 500; */
+  color: #6f6f6f;
+}
+.testimonial__header span {
+  font-size: 1.4rem;
+  opacity: 0.9;
 }
 .testimonial blockquote {
   font-size: 1.8rem;
   line-height: 1.8;
   margin-bottom: 1.6rem;
 }
-.testimonial p {
-  font-size: 1.6rem;
-  color: #6f6f6f;
-}
 .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
   padding-left: 4.8rem;
 }
@@ -284,6 +325,8 @@ nav {
 }
 .gallery__item img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
   transition: all 0.4s;
 }
@@ -298,7 +341,6 @@ nav {
 }
 .plans {
   column-gap: 8rem;
-  row-gap: 9.6rem;
 }
 .plan__card {
   width: 70%;
@@ -379,7 +421,11 @@ nav {
   padding-bottom: 9.6rem;
 }
 .features .grid {
-  gap: 3rem;
+  gap: 2.4rem;
+}
+.feature {
+  box-shadow: 0px 2px 10px 1px hsl(0deg 0% 90% / 50%);
+  padding: 2.4rem 1.2rem;
 }
 .feature__head {
   display: flex;
@@ -402,7 +448,7 @@ nav {
 }
 .feature__body {
   font-size: 1.8rem;
-  line-height: 1.8;
+  line-height: 1.7;
 }
 /*====== FEATURES END ======*/
 
@@ -478,8 +524,15 @@ nav {
   color: #45260a;
   background-color: #fdf2e9;
 }
-.cta__img img {
-  width: 100%;
+.cta__img {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("../images/eating.jpg");
+  background-size: cover;
+  background-position: center;
 }
 /*====== CALL TO ACTION END ======*/
 
@@ -491,7 +544,8 @@ nav {
 .footer__grid {
   display: grid;
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
-  column-gap: 1.8rem;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }
 .footer__logo {
   height: 2.2rem;
@@ -514,6 +568,7 @@ nav {
 .designer {
   font-size: 1.4rem;
   color: #555;
+  line-height: 1.5;
 }
 .designer small {
   font-size: 1.2rem;

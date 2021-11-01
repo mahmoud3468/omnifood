@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Custom Links -->
-  <link rel="stylesheet" href="css/general.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/queries.css" />
 
   <title>Omnifood</title>
 </head>
@@ -26,6 +27,12 @@
         <li><a href="#">Pricing</a></li>
         <li><a href="#" class="nav__cta">Try for free</a></li>
       </ul>
+
+      <div class="nav__burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
     <!-- Navbar End -->
   </header>
@@ -35,7 +42,7 @@
     <section class="hero__section">
       <div class="hero__wrapper">
         <div class="hero__text">
-          <h1 class="hero__header">A healthy meal delivered to your door, every single day</h1>
+          <h1 class="primary__heading">A healthy meal delivered to your door, every single day</h1>
 
           <p class="hero__description">The smart 365-days-per-year food subscription that will make you eat healthy
             again.
@@ -60,7 +67,8 @@
 
         </div>
         <div class="hero__image">
-          <img src="images/hero.png" alt="women enjoy eating meal in resturant">
+          <img class="hero-md" src="images/hero.png" alt="women enjoy eating meal in resturant">
+          <img class="hero-sm" src="images/hero-small.jpg" alt="women enjoy eating meal in resturant">
         </div>
       </div>
     </section>
@@ -103,7 +111,7 @@
           <div class="step__img"><img src="images/app/app-screen-1.png" alt=""></div>
 
           <!-- Step 02 -->
-          <div class="step__img"><img src="images/app/app-screen-2.png" alt=""></div>
+          <div class="step__img step__2"><img src="images/app/app-screen-2.png" alt=""></div>
           <div class="step__text">
             <span class="step__number">02</span>
             <h3 class="tertiary__heading">Approve your weekly meal plan</h3>
@@ -237,78 +245,101 @@
 
     <!-- Testimonials Start -->
     <section class="testimonials__section">
-      <div class="container__fluid grid grid--2--cols">
-        <div class="testimonials__wrapper">
-          <span class="sub__heading">Testimonials</span>
-          <h2 class="secondary__heading">Once you try it, you can't go back</h2>
-          <div class="testimonials grid grid--2--cols">
-            <figure class="testimonial">
+      <div class="testimonials__wrapper">
+        <span class="sub__heading">Testimonials</span>
+        <h2 class="secondary__heading">Once you try it, you can't go back</h2>
+        <div class="testimonials">
+          <figure class="testimonial">
+            <div class="testimonial__header">
               <img src="images/customers/dave.jpg" alt="customer image">
-              <blockquote>Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels
-                truly magical.</blockquote>
-              <p>— Dave Bryson</p>
-            </figure>
-            <figure class="testimonial">
+              <div>
+                <p>Dave Bryson</p>
+                <span>10-9-2021</span>
+              </div>
+            </div>
+            <blockquote>"Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels
+              truly magical."
+            </blockquote>
+          </figure>
+          <figure class="testimonial">
+            <div class="testimonial__header">
               <img src="images/customers/ben.jpg" alt="customer image">
-              <blockquote>The AI algorithm is crazy good, it chooses the right meals for me every time. It's amazing not
-                to worry about food
-                anymore!</blockquote>
-              <p>— Ben Hadley</p>
-            </figure>
-            <figure class="testimonial">
+              <div>
+                <p>Ben Hadley</p>
+                <span>25-4-2021</span>
+              </div>
+            </div>
+            <blockquote>"The AI algorithm is crazy good, it chooses the right meals for me every time. It's amazing not
+              to worry about food
+              anymore!"
+            </blockquote>
+          </figure>
+          <figure class="testimonial">
+            <div class="testimonial__header">
               <img src="images/customers/steve.jpg" alt="customer image">
-              <blockquote>Omnifood is a life saver! I just started a company, so there's no time for cooking. I couldn't
-                live without my daily
-                meals now!</blockquote>
-              <p>— Steve Miller</p>
-            </figure>
-            <figure class="testimonial">
+              <div>
+                <p>Steve Miller</p>
+                <span>8-3-2021</span>
+              </div>
+            </div>
+            <blockquote>"Omnifood is a life saver! I just started a company, so there's no time for cooking. I couldn't
+              live without my daily
+              meals now!"
+            </blockquote>
+          </figure>
+          <figure class="testimonial">
+            <div class="testimonial__header">
               <img src="images/customers/hannah.jpg" alt="customer image">
-              <blockquote>I got Omnifood for the whole family, and it frees up so much time! Plus, everything is organic
-                and vegan and without
-                plastic.</blockquote>
-              <p>— Hannah Smith</p>
-            </figure>
-          </div>
-        </div>
-        <div class="gallery grid grid--3--cols">
-          <figure class="gallery__item">
-            <img src="images/gallery/gallery-1.jpg" alt="">
-          </figure>
-          <figure class="gallery__item">
-            <img src="images/gallery/gallery-2.jpg" alt="">
-          </figure>
-          <figure class="gallery__item">
-            <img src="images/gallery/gallery-3.jpg" alt="">
-          </figure>
-          <figure class="gallery__item">
-            <img src="images/gallery/gallery-4.jpg" alt="">
-          </figure>
-          <figure class="gallery__item">
-            <img src="images/gallery/gallery-5.jpg" alt="">
-          </figure>
-          <figure class="gallery__item">
-            <img src="images/gallery/gallery-6.jpg" alt="">
-          </figure>
-          <figure class="gallery__item">
-            <img src="images/gallery/gallery-7.jpg" alt="">
-          </figure>
-          <figure class="gallery__item">
-            <img src="images/gallery/gallery-8.jpg" alt="">
-          </figure>
-          <figure class="gallery__item">
-            <img src="images/gallery/gallery-9.jpg" alt="">
-          </figure>
-          <figure class="gallery__item">
-            <img src="images/gallery/gallery-10.jpg" alt="">
-          </figure>
-          <figure class="gallery__item">
-            <img src="images/gallery/gallery-11.jpg" alt="">
-          </figure>
-          <figure class="gallery__item">
-            <img src="images/gallery/gallery-12.jpg" alt="">
+              <div>
+                <p>Hannah Smith</p>
+                <span>29-12-2020</span>
+              </div>
+            </div>
+            <blockquote>"I got Omnifood for the whole family, and it frees up so much time! Plus, everything is organic
+              and vegan and without
+              plastic."
+            </blockquote>
           </figure>
         </div>
+      </div>
+
+      <div class="gallery">
+        <figure class="gallery__item">
+          <img src="images/gallery/gallery-1.jpg" alt="">
+        </figure>
+        <figure class="gallery__item">
+          <img src="images/gallery/gallery-2.jpg" alt="">
+        </figure>
+        <figure class="gallery__item">
+          <img src="images/gallery/gallery-3.jpg" alt="">
+        </figure>
+        <figure class="gallery__item">
+          <img src="images/gallery/gallery-4.jpg" alt="">
+        </figure>
+        <figure class="gallery__item">
+          <img src="images/gallery/gallery-5.jpg" alt="">
+        </figure>
+        <figure class="gallery__item">
+          <img src="images/gallery/gallery-6.jpg" alt="">
+        </figure>
+        <figure class="gallery__item">
+          <img src="images/gallery/gallery-7.jpg" alt="">
+        </figure>
+        <figure class="gallery__item">
+          <img src="images/gallery/gallery-8.jpg" alt="">
+        </figure>
+        <figure class="gallery__item">
+          <img src="images/gallery/gallery-9.jpg" alt="">
+        </figure>
+        <figure class="gallery__item">
+          <img src="images/gallery/gallery-10.jpg" alt="">
+        </figure>
+        <figure class="gallery__item">
+          <img src="images/gallery/gallery-11.jpg" alt="">
+        </figure>
+        <figure class="gallery__item">
+          <img src="images/gallery/gallery-12.jpg" alt="">
+        </figure>
       </div>
     </section>
     <!-- Testimonials End -->
@@ -384,7 +415,7 @@
 
     <!-- Features Start -->
     <section class="features">
-      <div class="container grid grid--4--cols">
+      <div class="container grid grid--3--cols">
         <div class="feature">
           <div class="feature__head">
             <ion-icon class="feature__icon" name="infinite-outline"></ion-icon>
@@ -403,7 +434,7 @@
             Our cooks only use local, fresh, and organic products to prepare your meals.
           </p>
         </div>
-        <div class="feature">
+        <!-- <div class="feature">
           <div class="feature__head">
             <ion-icon class="feature__icon" name="leaf-outline"></ion-icon>
             <p class="feature__title">No waste</p>
@@ -411,14 +442,14 @@
           <p class="feature__body">
             All our partners only use re-usable containers to package all your meals.
           </p>
-        </div>
+        </div> -->
         <div class="feature">
           <div class="feature__head">
             <ion-icon class="feature__icon" name="pause-outline"></ion-icon>
             <p class="feature__title">Pause anytime</p>
           </div>
           <p class="feature__body">
-            Going on vacation? Just pause your subscription, and we refund unused days.
+            Going on vacation? Just pause your subs, and we will refund unused days.
           </p>
         </div>
       </div>
@@ -457,9 +488,7 @@
               <button class=" cta__btn" type="submit">sign up now</button>
             </form>
           </div>
-          <div class="cta__img">
-            <img src="images/eating.jpg" alt="women enjoy eating food">
-          </div>
+          <div class="cta__img"></div>
         </div>
       </div>
     </section>

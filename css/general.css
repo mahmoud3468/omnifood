@@ -20,7 +20,6 @@
 html {
   font-size: 62.5%;
 }
-
 /*==============================*/
 /*====== General Rules ====== */
 /*==============================*/
@@ -35,13 +34,23 @@ html {
 .container__fluid {
   max-width: 140rem;
 }
+.primary__heading {
+  font-size: 5.2rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
 .secondary__heading {
+  line-height: 1.2;
   color: var(--gray-color);
   font-weight: 700;
   font-size: 4.4rem;
   margin-bottom: 9.6rem;
 }
 .sub__heading {
+  line-height: 1.2;
   color: var(--primary-color-dark);
   text-transform: uppercase;
   letter-spacing: 0.75px;
@@ -55,6 +64,7 @@ html {
   font-weight: 700;
   font-size: 3rem;
   margin-bottom: 3.2rem;
+  line-height: 1.2;
 }
 .btn {
   padding: 1.6rem 3.2rem;
@@ -68,13 +78,11 @@ html {
 ul {
   list-style: none;
 }
-.list,
 .list {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.list li,
 .list li {
   font-size: 1.8rem;
   display: flex;
@@ -83,6 +91,9 @@ ul {
 }
 .list li span {
   font-weight: 500;
+}
+.list li p {
+  line-height: 1.2;
 }
 .list .list__icon {
   height: 2.6rem;
