@@ -23,6 +23,10 @@ html {
 /*==============================*/
 /*====== General Rules ====== */
 /*==============================*/
+.site__wrapper {
+  position: relative;
+  overflow-x: hidden;
+}
 .container,
 .container__fluid {
   padding: 0 3.2rem;
@@ -101,6 +105,18 @@ ul {
   color: #e67e22;
 }
 
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgb(230 125 34 / 50%);
+}
 /*=============================*/
 /*====== Grid System ====== */
 /*=============================*/

@@ -37,18 +37,11 @@ nav {
 }
 .nav__burger {
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 40px;
-  height: 25px;
 }
-.nav__burger span {
-  height: 3px;
-  width: 100%;
-  border-radius: 50px;
-  background-color: rgb(14, 14, 14);
-  display: inline-block;
+.burger__icon {
+  height: 5.2rem;
+  width: 5.2rem;
+  cursor: pointer;
 }
 /* ====== NAVBAR END ====== */
 
